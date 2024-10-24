@@ -1,0 +1,23 @@
+{
+  "name": "Nombre Extensión",
+  "description": "Descripcion",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle",
+      "match_about_blank": false,
+      "all_frames": true
+    }
+  ]
+}
