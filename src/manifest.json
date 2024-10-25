@@ -1,11 +1,25 @@
 {
-  "name": "Nombre Extensión",
-  "description": "Descripcion",
+  "name": "Copy & Paste Enabler",
+  "description": "Unlock the full potential of your browser by enabling copy and paste functionality on websites that restrict it. Whether you're working with forms, text, or content that you need to transfer, Copy & Paste Enabler restores your right to easily copy and paste information. Perfect for enhancing productivity, this extension is lightweight and simple to use.",
   "version": "1.0",
+  "author": "Angel Martz",
+  "homepage_url": "https://angelmartz.dev",
   "manifest_version": 3,
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+    "default_popup": "popup.html",
+    "default_title": "Unlock the full potential of your browser by enabling copy (CTRL+C or CMD+C) / paste (CTRL+P or CMD+P) on websites that restrict it",
+    "default_icon": {
+      "16": "/icons/icon16.png",
+      "32": "/icons/icon32.png",
+      "48": "/icons/icon48.png",
+      "128": "/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "/icons/icon16.png",
+    "32": "/icons/icon32.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
   },
   "content_scripts": [
     {
